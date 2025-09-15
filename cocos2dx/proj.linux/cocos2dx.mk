@@ -95,7 +95,7 @@ SHAREDLIBS += -lfmodex
 endif
 endif
 
-SHAREDLIBS += -lglfw -lGLEW -lfontconfig -lpthread -lGL
+SHAREDLIBS += -L/usr/local/lib -lglfw -lGLEW -lfontconfig -lpthread -lGL -lXrandr -lX11 -lXinerama -lXi -lXcursor -lXxf86vm -lXss -lm -lrt -lz
 SHAREDLIBS += -L$(FMOD_LIBDIR) -Wl,-rpath,$(abspath $(FMOD_LIBDIR))
 SHAREDLIBS += -L$(LIB_DIR) -Wl,-rpath,$(abspath $(LIB_DIR))
 
